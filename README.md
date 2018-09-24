@@ -100,4 +100,83 @@ It can be deployed to any web server, example configuration for Apache:
 ```
 
 
+## Virtual Machine install
+
+### Download .ova file and import it into Virtual Box
+
+Credentials:
+User (sudo enabled): tjt
+Password: tjt
+Hostname:
+tjt-wp-server
+backend.tjt-wp-server
+connector.tjt-wp-server
+wordpress.tjt-wp-server
+
+
+### Setup
+
+The Virtual Box image is configured as “bridge”. The guest will adquire its own IP address.
+Log-in the virtual machine and run “ifconfig” in order to know its IP.
+
+In your workstation, edit your hosts file in order to access the virtual machine.
+
+Linux, MacOSX: /etc/hosts
+Windows: C:\Windows\System32\drivers\etc\hosts
+ 
+Add this line to your hosts file (change VIRTUAL-MACHINE-IP to the virtual machine IP)
+
+VIRTUAL-MACHINE-IP	tjt-wp-server backend.tjt-wp-server connector.tjt-wp-server wordpress.tjt-wp-server
+
+Now, you can access, using the provided credentials:
+
+SSH: ssh tjt@tjt-wp-server
+Wordpress: http://wordpress.tjt-wp-server/wp-admin/
+TJ_Tool backend: http://backend.tjt-wp-server/admin/dashboard
+
+### Virtual machine components
+
+Mysql (data: /var/lib/mysql)
+Root user, password: tjt
+
+*Database TJ_Tool*
+DB name: tjt
+DB user: tjt
+DB password: tjt
+
+*Database Wordpres*
+DB name: wp
+DB user: wp
+DB password: wp
+
+
+Apache
+Vhost: backend.tjt-wp-server
+/home/tjt/www/backend
+Vhost: connector.tjt-wp-server
+/home/tjt/www/connector
+Vhost: wordpress.tjt-wp-server
+/home/tjt/www/wordpress
+
+
+Wordpress /wp-admin
+Admin user: tjt
+Password: tjt
+
+
+TJ_Tool backend http://backend.tjt-wp-server/admin
+ROLE_SUPER_ADMIN
+User: admin
+Password: admin
+ROLE_ADMIN
+User: admin1
+Password: admin1
+ROLE_AUTHOR_ADMIN
+User: admin2
+Password: admin2
+ROLE_JOURNALIST
+User: journalist
+Password: journalist
+
+
 
