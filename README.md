@@ -103,6 +103,7 @@ It can be deployed to any web server, example configuration for Apache:
 ## Virtual Machine install
 
 Download .ova file and import it into Virtual Box
+http://tjt.publico.es/ova/TJ_Tool_Wordpres_Integration.ova
 
 Credentials:
 
