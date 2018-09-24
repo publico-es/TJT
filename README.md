@@ -45,6 +45,7 @@ TJ_Tool Core Backend: administrator inteface, API endpoint, products generator.
 It can be deployed to any web server, example configuration for Apache:
 
 */etc/apache2/sites-enabled/001-backend.conf*
+
 ```
 <VirtualHost *:80>
     ServerName backend.tjt-wp-server 
@@ -62,7 +63,8 @@ It can be deployed to any web server, example configuration for Apache:
 ```
 
 
-*/etc/apache2/sites-enabled/002-connector.conf *
+*/etc/apache2/sites-enabled/002-connector.conf*
+
 ```
 <VirtualHost *:80>
     ServerName connector.tjt-wp-server 
@@ -80,6 +82,7 @@ It can be deployed to any web server, example configuration for Apache:
 ```
 
 */etc/apache2/sites-enabled/003-wordpress.conf*
+
 ```
 <VirtualHost *:80>
     ServerName wordpress.tjt-wp-server 
