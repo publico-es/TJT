@@ -102,16 +102,19 @@ It can be deployed to any web server, example configuration for Apache:
 
 ## Virtual Machine install
 
-### Download .ova file and import it into Virtual Box
+Download .ova file and import it into Virtual Box
 
 Credentials:
-User (sudo enabled): tjt
-Password: tjt
-Hostname:
-tjt-wp-server
-backend.tjt-wp-server
-connector.tjt-wp-server
-wordpress.tjt-wp-server
+
+- User (sudo enabled): tjt
+- Password: tjt
+
+Hostname: 
+
+- tjt-wp-server
+- backend.tjt-wp-server
+- connector.tjt-wp-server
+- wordpress.tjt-wp-server
 
 
 ### Setup
@@ -140,43 +143,44 @@ Mysql (data: /var/lib/mysql)
 Root user, password: tjt
 
 *Database TJ_Tool*
-DB name: tjt
-DB user: tjt
-DB password: tjt
+- DB name: tjt
+- DB user: tjt
+- DB password: tjt
 
 *Database Wordpres*
-DB name: wp
-DB user: wp
-DB password: wp
+- DB name: wp
+- DB user: wp
+- DB password: wp
 
 
 Apache
-Vhost: backend.tjt-wp-server
-/home/tjt/www/backend
-Vhost: connector.tjt-wp-server
-/home/tjt/www/connector
-Vhost: wordpress.tjt-wp-server
-/home/tjt/www/wordpress
+- Vhost: backend.tjt-wp-server in /home/tjt/www/backend
+- Vhost: connector.tjt-wp-server in /home/tjt/www/connector
+- Vhost: wordpress.tjt-wp-server in /home/tjt/www/wordpress
 
 
 Wordpress /wp-admin
-Admin user: tjt
-Password: tjt
+- Admin user: tjt
+- Password: tjt
 
 
 TJ_Tool backend http://backend.tjt-wp-server/admin
+
 ROLE_SUPER_ADMIN
-User: admin
-Password: admin
+- User: admin
+- Password: admin
+
 ROLE_ADMIN
-User: admin1
-Password: admin1
+- User: admin1
+- Password: admin1
+
 ROLE_AUTHOR_ADMIN
-User: admin2
-Password: admin2
+- User: admin2
+- Password: admin2
+
 ROLE_JOURNALIST
-User: journalist
-Password: journalist
+- User: journalist
+- Password: journalist
 
 
 
