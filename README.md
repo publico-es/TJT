@@ -4,7 +4,8 @@
 ## Transparent Journalism Tool
 
 By _Público_ (http://www.publico.es)
-Project webpage: http://www.periodismotransparente.es/
+
+Project webpage (Spanish): http://www.periodismotransparente.es/
 
 
 ## What is TJ_Tool?
