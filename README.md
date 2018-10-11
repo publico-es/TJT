@@ -139,7 +139,9 @@ VIRTUAL-MACHINE-IP	tjt-wp-server backend.tjt-wp-server connector.tjt-wp-server w
 Now, you can access, using the provided credentials:
 
 SSH: ssh tjt@tjt-wp-server
+
 Wordpress: http://wordpress.tjt-wp-server/wp-admin/
+
 TJ_Tool backend: http://backend.tjt-wp-server/admin/dashboard
 
 ### Virtual machine components
