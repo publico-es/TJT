@@ -134,7 +134,9 @@ Windows: C:\Windows\System32\drivers\etc\hosts
  
 Add this line to your hosts file (change VIRTUAL-MACHINE-IP to the virtual machine IP)
 
+```
 VIRTUAL-MACHINE-IP	tjt-wp-server backend.tjt-wp-server connector.tjt-wp-server wordpress.tjt-wp-server
+```
 
 Now, you can access, using the provided credentials:
 
